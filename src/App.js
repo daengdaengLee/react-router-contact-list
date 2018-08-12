@@ -42,10 +42,10 @@ const Contacts = ({ match }) => (
     </ul>
     <Route
       exact
-      path={`${match.url}`}
+      path={`${match.path}`}
       render={() => <h3>Please select a contact</h3>}
     />
-    <Route path={`${match.url}/:contactName`} component={Contact} />
+    <Route path={`${match.path}/:contactName`} component={Contact} />
   </Fragment>
 );
 
